@@ -8,9 +8,7 @@
   grid-template-areas:
     "sidebar header header"
     "sidebar content-1 content-1"
-    "sidebar content-2 content-3"
-    "sidebar content-4 content-5"
-    "sidebar content-6 content-7";
+    "sidebar content-2 content-2";
 }
 
 .content-1 {
@@ -19,26 +17,6 @@
 
 .content-2 {
   grid-area: content-2;
-}
-
-.content-3 {
-  grid-area: content-3;
-}
-
-.content-4 {
-  grid-area: content-4;
-}
-
-.content-5 {
-  grid-area: content-5;
-}
-
-.content-6 {
-  grid-area: content-6;
-}
-
-.content-7 {
-  grid-area: content-7;
 }
 
 .header {
