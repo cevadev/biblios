@@ -144,7 +144,7 @@ body {
 }
 
 .sidebar .side-menu li.active a {
-  color: var(--success);
+  color: var(--primary);
 }
 
 .sidebar.close .side-menu li a {
@@ -343,7 +343,7 @@ body {
   cursor: pointer;
 }
 
-.content main .header .left h1 {
+.content main .home > div {
   font-size: 36px;
   font-weight: 400;
   margin-bottom: 10px;
