@@ -144,6 +144,10 @@ body {
   transition: all 0.3s ease;
 }
 
+.sidebar .side-menu li a:hover {
+  color: var(--primary);
+}
+
 .sidebar .side-menu li.active a {
   color: var(--primary);
 }
@@ -240,6 +244,15 @@ body {
   outline: none;
   width: 100%;
   color: var(--dark);
+}
+
+/* uso de pseudoclases - :hover :focus*/
+.content nav form .form-input input:hover {
+  border: 2px solid var(--primary);
+}
+
+.content nav form .form-input input:focus {
+  background: var(--light);
 }
 
 .content nav form .form-input button {
