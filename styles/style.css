@@ -330,7 +330,7 @@ body {
   font-weight: 400;
 }
 
-.content main .home .panel {
+.content main .home .startPanelHeader {
   font-size: 14px;
   font-weight: 400;
 }
@@ -339,8 +339,17 @@ body {
   cursor: pointer;
 }
 
-.content main .home .panel .container_add svg {
+.content main .home .startPanelHeader .container_add svg {
   cursor: pointer;
+}
+
+.content main .home .startPanelContainer .startPanelInfo .title {
+  font-size: 24px;
+}
+
+.content main .home .startPanelContainer .startPanelInfo > div {
+  margin: 6px;
+  font-size: 14px;
 }
 
 .content main .home > div {
