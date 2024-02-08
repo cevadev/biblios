@@ -339,12 +339,23 @@ body {
   flex-wrap: wrap;
 }
 
+.content main .home > section {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
 .content main .home .start {
+  display: flex;
+  justify-content: space-between;
   font-size: 24px;
   font-weight: 400;
 }
 
 .content main .home .startPanelHeader {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   font-weight: 400;
 }
@@ -357,20 +368,22 @@ body {
   cursor: pointer;
 }
 
-.content main .home .startPanelContainer .startPanelInfo .title {
+.content main .home .startPanelContainer {
+  background: var(--light);
+}
+
+.content main .home .startPanelContainer > p {
+  display: block;
+  text-align: center;
+}
+
+.content main .home .startPanelContainer .title {
   font-size: 24px;
 }
 
-.content main .home .startPanelContainer .startPanelInfo > div {
+.content main .home .startPanelContainer > p {
   margin: 6px;
   font-size: 14px;
-}
-
-.content main .home > div {
-  font-size: 36px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: var(--dark);
 }
 
 /*
