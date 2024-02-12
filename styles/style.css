@@ -40,6 +40,11 @@ html {
   overflow-x: hidden;
 }
 
+body::selection {
+  color: greenyellow;
+  background-color: var(--dark);
+}
+
 body.dark {
   --light: #181a1e;
   --grey: #25252c;
@@ -378,12 +383,31 @@ body {
 }
 
 .content main .home .startPanelContainer .title {
+  padding: 15px 5px;
   font-size: 24px;
 }
 
 .content main .home .startPanelContainer > p {
-  margin: 6px;
+  margin: 8px;
   font-size: 14px;
+}
+
+.content main .home .services {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.content main .home .services button {
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.content main .home .services button:hover {
+  color: var(--primary);
 }
 
 /*

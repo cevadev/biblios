@@ -1,143 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Biblos</title>
-  </head>
 
-  <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <a href="#" class="logo">
-        <i class="bx bx-book-add"></i>
-        <div class="logo-name"><span>Biblos</span></div>
-      </a>
-      <ul class="side-menu">
-        <li>
-          <a href="#"><i class="bx bxs-home-alt-2"></i>Inicio</a>
-        </li>
-        <li class="active">
-          <a href="#"><i class="bx bx-library"></i>Biblioteca</a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bx-search"></i>Buscar</a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bx-bible"></i>Biblia</a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bx-store-alt"></i>Tienda</a>
-        </li>
-        <li>
-          <a href="#"><i class="bx bx-cog"></i>Preferencias</a>
-        </li>
-      </ul>
-      <ul class="side-menu">
-        <li>
-          <a href="#" class="logout">
-            <i class="bx bx-log-out"></i>
-            Logout
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- End of Sidebar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Biblos</title>
+</head>
 
-    <!-- Main Content -->
-    <div class="content">
-      <!-- Navbar -->
-      <nav>
-        <i class="bx bx-menu"></i>
-        <form action="#">
-          <div class="form-input">
-            <input type="search" placeholder="vers&iacute;culo o tema..." />
-            <button class="search-btn" type="submit">
-              <i class="bx bx-search"></i>
-            </button>
-          </div>
-        </form>
-        <input type="checkbox" id="theme-toggle" hidden />
-        <label for="theme-toggle" class="theme-toggle"></label>
-        <a href="#" class="notif">
-          <i class="bx bx-bell"></i>
-          <span class="count">12</span>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="#" class="logo">
+      <i class="bx bx-book-add"></i>
+      <div class="logo-name"><span>Biblos</span></div>
+    </a>
+    <ul class="side-menu">
+      <li>
+        <a href="#"><i class="bx bxs-home-alt-2"></i>Inicio</a>
+      </li>
+      <li class="active">
+        <a href="#"><i class="bx bx-library"></i>Biblioteca</a>
+      </li>
+      <li>
+        <a href="#"><i class="bx bx-search"></i>Buscar</a>
+      </li>
+      <li>
+        <a href="#"><i class="bx bx-bible"></i>Biblia</a>
+      </li>
+      <li>
+        <a href="#"><i class="bx bx-note"></i>Notas</a>
+      </li>
+      <li>
+        <a href="#"><i class="bx bx-store-alt"></i>Tienda</a>
+      </li>
+      <li>
+        <a href="#"><i class="bx bx-cog"></i>Preferencias</a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#" class="logout">
+          <i class="bx bx-log-out"></i>
+          Logout
         </a>
-        <a href="#" class="profile">
-          <img src="images/logo.png" />
-        </a>
-      </nav>
+      </li>
+    </ul>
+  </div>
+  <!-- End of Sidebar -->
 
-      <!-- End of Navbar -->
-
-      <main>
-        <div class="home">
-          <section class="start">
-            <strong>INICIO</strong>
-            <div class="container_gear">
-              <svg width="18" height="18" viewBox="0 0 18 18">
-                <path
-                  fill="var(--bible-study-icon-color, #63728C)"
-                  fill-rule="evenodd"
-                  d="M10.1969 1.5H7.83645L7.40673 3.37342C7.37925 3.49308 7.28755 3.59596 7.17183 3.63697C6.94783 3.7139 6.72743 3.804 6.5187 3.90624C6.4077 3.96096 6.26871 3.95423 6.1635 3.88906L4.53068 2.86927L2.86924 4.53072L3.88901 6.16353C3.95424 6.26873 3.96093 6.40772 3.90625 6.51874C3.804 6.72746 3.71965 6.94211 3.6427 7.16613C3.60232 7.28534 3.4964 7.37997 3.37344 7.40676L1.5 7.83645V10.1911L3.37348 10.6208C3.49644 10.6476 3.60235 10.7422 3.64274 10.8614C3.7197 11.0855 3.80404 11.3001 3.90628 11.5089C3.96301 11.6213 3.95626 11.7633 3.88905 11.8698L2.86928 13.4969L4.53071 15.1583L6.16353 14.1385C6.26875 14.0733 6.40773 14.0666 6.51874 14.1213C6.72746 14.2235 6.94787 14.3136 7.17186 14.3906C7.28758 14.4316 7.37929 14.5345 7.40677 14.6541L7.84218 16.5333H10.1911L10.6265 14.6541C10.654 14.5345 10.7457 14.4316 10.8614 14.3906C11.0854 14.3136 11.3058 14.2235 11.5146 14.1213C11.6256 14.0666 11.7646 14.0734 11.8698 14.1385L13.5026 15.1583L15.164 13.4969L14.1443 11.8698C14.077 11.7633 14.0703 11.6213 14.127 11.5089C14.2293 11.3001 14.3136 11.0855 14.3906 10.8614C14.431 10.7422 14.5369 10.6476 14.6598 10.6208L16.5333 10.1911V7.83646L14.6598 7.40677C14.5369 7.37998 14.431 7.28535 14.3906 7.16614C14.3136 6.94212 14.2293 6.72747 14.127 6.51875C14.0724 6.40773 14.0791 6.26874 14.1443 6.16354L15.164 4.53073L13.5026 2.86928L11.8698 3.88907C11.7646 3.95423 11.6256 3.96096 11.5146 3.90625C11.3058 3.80401 11.0854 3.71391 10.8614 3.63698C10.7457 3.59597 10.654 3.49309 10.6265 3.37343L10.1969 1.5ZM12.3166 9.01666C12.3166 7.18975 10.8435 5.71666 9.01665 5.71666C7.18978 5.71666 5.71666 7.18975 5.71666 9.01666C5.71666 10.8435 7.18978 12.3167 9.01665 12.3167C10.8435 12.3167 12.3166 10.8435 12.3166 9.01666Z"
-                ></path>
-              </svg>
-            </div>
-          </section>
-          <hr />
-
-          <section class="startPanelHeader">
-            <b>PANEL DE INICIO</b>
-            <div class="container_add">
-              <svg width="18" height="18" viewBox="0 0 18 18">
-                <path
-                  fill="var(--bible-study-icon-color, #63728C)"
-                  fill-rule="evenodd"
-                  d="M17 9C17 13.4184 13.4184 17 9 17C4.5816 17 1 13.4184 1 9C1 4.5816 4.5816 1 9 1C13.4184 1 17 4.5816 17 9ZM15.4 9C15.4 5.46538 12.5346 2.6 9 2.6C5.46538 2.6 2.6 5.46538 2.6 9C2.6 12.5346 5.46538 15.4 9 15.4C12.5346 15.4 15.4 12.5346 15.4 9ZM8.1 8.1V5H9.9V8.1H13V9.9H9.9V13H8.1V9.9H5V8.1H8.1Z"
-                ></path>
-              </svg>
-            </div>
-          </section>
-
-          <section class="startPanelContainer">
-            <p class="title">Bienvenido/a a tu Panel de Inicio</p>
-            <p>
-              Ingrese un pasaje o tema en el cuadro de arriba para abrir un
-              diseño de estudio.
-            </p>
-            <p>
-              Utiliza el bot&oacute;n
-              <svg
-                class="icon_1se-g"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-              >
-                <path
-                  fill="var(--bible-study-icon-color, #63728C)"
-                  fill-rule="evenodd"
-                  d="M17 9C17 13.4184 13.4184 17 9 17C4.5816 17 1 13.4184 1 9C1 4.5816 4.5816 1 9 1C13.4184 1 17 4.5816 17 9ZM15.4 9C15.4 5.46538 12.5346 2.6 9 2.6C5.46538 2.6 2.6 5.46538 2.6 9C2.6 12.5346 5.46538 15.4 9 15.4C12.5346 15.4 15.4 12.5346 15.4 9ZM8.1 8.1V5H9.9V8.1H13V9.9H9.9V13H8.1V9.9H5V8.1H8.1Z"
-                ></path>
-              </svg>
-              para agregar tarjetas y hacer un seguimiento de tus Planes de
-              lectura, Listas de oraci&oacute;n, flujos de estudio y m&aacute;s
-            </p>
-            <p>
-              En la secci&oacute;n <b>Explorar</b> situada en la parte inferior,
-              podr&aacute;s encontrar videos de entrenamiento, porciones de
-              recursos de tu biblioteca, funciones recomendadas como
-              <b>Flujo de estudio</b>y blogs.
-            </p>
-          </section>
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Navbar -->
+    <nav>
+      <i class="bx bx-menu"></i>
+      <form action="#">
+        <div class="form-input">
+          <input type="search" placeholder="vers&iacute;culo o tema..." />
+          <button class="search-btn" type="submit">
+            <i class="bx bx-search"></i>
+          </button>
         </div>
-      </main>
-    </div>
+      </form>
+      <input type="checkbox" id="theme-toggle" hidden />
+      <label for="theme-toggle" class="theme-toggle"></label>
+      <a href="#" class="notif">
+        <i class="bx bx-bell"></i>
+        <span class="count">12</span>
+      </a>
+      <a href="#" class="profile">
+        <img src="images/logo.png" />
+      </a>
+    </nav>
 
-    <script src="./js/index.js" type="module"></script>
-  </body>
+    <!-- End of Navbar -->
+
+    <main>
+      <div class="home">
+        <section class="start">
+          <strong>INICIO</strong>
+          <div class="container_gear">
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <path fill="var(--bible-study-icon-color, #63728C)" fill-rule="evenodd"
+                d="M10.1969 1.5H7.83645L7.40673 3.37342C7.37925 3.49308 7.28755 3.59596 7.17183 3.63697C6.94783 3.7139 6.72743 3.804 6.5187 3.90624C6.4077 3.96096 6.26871 3.95423 6.1635 3.88906L4.53068 2.86927L2.86924 4.53072L3.88901 6.16353C3.95424 6.26873 3.96093 6.40772 3.90625 6.51874C3.804 6.72746 3.71965 6.94211 3.6427 7.16613C3.60232 7.28534 3.4964 7.37997 3.37344 7.40676L1.5 7.83645V10.1911L3.37348 10.6208C3.49644 10.6476 3.60235 10.7422 3.64274 10.8614C3.7197 11.0855 3.80404 11.3001 3.90628 11.5089C3.96301 11.6213 3.95626 11.7633 3.88905 11.8698L2.86928 13.4969L4.53071 15.1583L6.16353 14.1385C6.26875 14.0733 6.40773 14.0666 6.51874 14.1213C6.72746 14.2235 6.94787 14.3136 7.17186 14.3906C7.28758 14.4316 7.37929 14.5345 7.40677 14.6541L7.84218 16.5333H10.1911L10.6265 14.6541C10.654 14.5345 10.7457 14.4316 10.8614 14.3906C11.0854 14.3136 11.3058 14.2235 11.5146 14.1213C11.6256 14.0666 11.7646 14.0734 11.8698 14.1385L13.5026 15.1583L15.164 13.4969L14.1443 11.8698C14.077 11.7633 14.0703 11.6213 14.127 11.5089C14.2293 11.3001 14.3136 11.0855 14.3906 10.8614C14.431 10.7422 14.5369 10.6476 14.6598 10.6208L16.5333 10.1911V7.83646L14.6598 7.40677C14.5369 7.37998 14.431 7.28535 14.3906 7.16614C14.3136 6.94212 14.2293 6.72747 14.127 6.51875C14.0724 6.40773 14.0791 6.26874 14.1443 6.16354L15.164 4.53073L13.5026 2.86928L11.8698 3.88907C11.7646 3.95423 11.6256 3.96096 11.5146 3.90625C11.3058 3.80401 11.0854 3.71391 10.8614 3.63698C10.7457 3.59597 10.654 3.49309 10.6265 3.37343L10.1969 1.5ZM12.3166 9.01666C12.3166 7.18975 10.8435 5.71666 9.01665 5.71666C7.18978 5.71666 5.71666 7.18975 5.71666 9.01666C5.71666 10.8435 7.18978 12.3167 9.01665 12.3167C10.8435 12.3167 12.3166 10.8435 12.3166 9.01666Z">
+              </path>
+            </svg>
+          </div>
+        </section>
+        <hr />
+
+        <section class="startPanelHeader">
+          <b>PANEL DE INICIO</b>
+          <div class="container_add">
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <path fill="var(--bible-study-icon-color, #63728C)" fill-rule="evenodd"
+                d="M17 9C17 13.4184 13.4184 17 9 17C4.5816 17 1 13.4184 1 9C1 4.5816 4.5816 1 9 1C13.4184 1 17 4.5816 17 9ZM15.4 9C15.4 5.46538 12.5346 2.6 9 2.6C5.46538 2.6 2.6 5.46538 2.6 9C2.6 12.5346 5.46538 15.4 9 15.4C12.5346 15.4 15.4 12.5346 15.4 9ZM8.1 8.1V5H9.9V8.1H13V9.9H9.9V13H8.1V9.9H5V8.1H8.1Z">
+              </path>
+            </svg>
+          </div>
+        </section>
+
+        <section class="startPanelContainer">
+          <p class="title">Bienvenido/a a tu Panel de Inicio</p>
+          <p>
+            Ingrese un pasaje o tema en el cuadro de arriba para abrir un
+            diseño de estudio.
+          </p>
+          <p>
+            Utiliza el bot&oacute;n
+            <svg class="icon_1se-g" width="18" height="18" viewBox="0 0 18 18">
+              <path fill="var(--bible-study-icon-color, #63728C)" fill-rule="evenodd"
+                d="M17 9C17 13.4184 13.4184 17 9 17C4.5816 17 1 13.4184 1 9C1 4.5816 4.5816 1 9 1C13.4184 1 17 4.5816 17 9ZM15.4 9C15.4 5.46538 12.5346 2.6 9 2.6C5.46538 2.6 2.6 5.46538 2.6 9C2.6 12.5346 5.46538 15.4 9 15.4C12.5346 15.4 15.4 12.5346 15.4 9ZM8.1 8.1V5H9.9V8.1H13V9.9H9.9V13H8.1V9.9H5V8.1H8.1Z">
+              </path>
+            </svg>
+            para agregar tarjetas y hacer un seguimiento de tus Planes de
+            lectura, Listas de oraci&oacute;n, flujos de estudio y m&aacute;s
+          </p>
+          <p>
+            En la secci&oacute;n <b>Explorar</b> situada en la parte inferior,
+            podr&aacute;s encontrar videos de entrenamiento, porciones de
+            recursos de tu biblioteca, funciones recomendadas como
+            <b>Flujo de estudio</b>y blogs.
+          </p>
+        </section>
+
+        <section class="services">
+          <b>SERVICIOS</b>
+          <button>
+            <svg width="18" height="18" viewBox="0 0 18 18">
+              <path fill="var(--bible-study-icon-color, #63728C)" fill-rule="evenodd"
+                d="M10.1969 1.5H7.83645L7.40673 3.37342C7.37925 3.49308 7.28755 3.59596 7.17183 3.63697C6.94783 3.7139 6.72743 3.804 6.5187 3.90624C6.4077 3.96096 6.26871 3.95423 6.1635 3.88906L4.53068 2.86927L2.86924 4.53072L3.88901 6.16353C3.95424 6.26873 3.96093 6.40772 3.90625 6.51874C3.804 6.72746 3.71965 6.94211 3.6427 7.16613C3.60232 7.28534 3.4964 7.37997 3.37344 7.40676L1.5 7.83645V10.1911L3.37348 10.6208C3.49644 10.6476 3.60235 10.7422 3.64274 10.8614C3.7197 11.0855 3.80404 11.3001 3.90628 11.5089C3.96301 11.6213 3.95626 11.7633 3.88905 11.8698L2.86928 13.4969L4.53071 15.1583L6.16353 14.1385C6.26875 14.0733 6.40773 14.0666 6.51874 14.1213C6.72746 14.2235 6.94787 14.3136 7.17186 14.3906C7.28758 14.4316 7.37929 14.5345 7.40677 14.6541L7.84218 16.5333H10.1911L10.6265 14.6541C10.654 14.5345 10.7457 14.4316 10.8614 14.3906C11.0854 14.3136 11.3058 14.2235 11.5146 14.1213C11.6256 14.0666 11.7646 14.0734 11.8698 14.1385L13.5026 15.1583L15.164 13.4969L14.1443 11.8698C14.077 11.7633 14.0703 11.6213 14.127 11.5089C14.2293 11.3001 14.3136 11.0855 14.3906 10.8614C14.431 10.7422 14.5369 10.6476 14.6598 10.6208L16.5333 10.1911V7.83646L14.6598 7.40677C14.5369 7.37998 14.431 7.28535 14.3906 7.16614C14.3136 6.94212 14.2293 6.72747 14.127 6.51875C14.0724 6.40773 14.0791 6.26874 14.1443 6.16354L15.164 4.53073L13.5026 2.86928L11.8698 3.88907C11.7646 3.95423 11.6256 3.96096 11.5146 3.90625C11.3058 3.80401 11.0854 3.71391 10.8614 3.63698C10.7457 3.59597 10.654 3.49309 10.6265 3.37343L10.1969 1.5ZM12.3166 9.01666C12.3166 7.18975 10.8435 5.71666 9.01665 5.71666C7.18978 5.71666 5.71666 7.18975 5.71666 9.01666C5.71666 10.8435 7.18978 12.3167 9.01665 12.3167C10.8435 12.3167 12.3166 10.8435 12.3166 9.01666Z">
+              </path>
+            </svg>
+          </button>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+
 </html>
