@@ -15,7 +15,7 @@ sideLinks.forEach((item) => {
   });
 });
 
-const menuBar = document.querySelector(".content nav .bx.bx-menu");
+const menuBar = document.querySelector(".header-nav nav .bx.bx-menu");
 const sideBar = document.querySelector(".sidebar");
 
 menuBar.addEventListener("click", () => {
@@ -23,12 +23,14 @@ menuBar.addEventListener("click", () => {
 });
 
 const searchBtn = document.querySelector(
-  ".content nav form .form-input button"
+  //".header-nav nav form .form-input button"
+  ".form-element-container button"
 );
 const searchBtnIcon = document.querySelector(
-  ".content nav form .form-input button .bx"
+  //".content nav form .form-input button .bx"
+  ".form-element-container button .bx"
 );
-const searchForm = document.querySelector(".content nav form");
+const searchForm = document.querySelector(".search-form");
 
 searchBtn.addEventListener("click", function (e) {
   if (window.innerWidth < 576) {
