@@ -1,3 +1,10 @@
+const sideBar = document.querySelector(".sidebar");
+const searchBtnIcon = document.querySelector(
+  ".form-element-container button .bx"
+);
+
+const searchForm = document.querySelector(".search-form");
+
 export default function windowResize() {
   window.addEventListener("resize", () => {
     if (window.innerWidth < 768) {
