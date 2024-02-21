@@ -1,9 +1,5 @@
-const searchBtn = document.querySelector(
-  //".header-nav nav form .form-input button"
-  ".form-element-container button"
-);
+const searchBtn = document.querySelector(".form-element-container button");
 const searchBtnIcon = document.querySelector(
-  //".content nav form .form-input button .bx"
   ".form-element-container button .bx"
 );
 const searchForm = document.querySelector(".search-form");

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <title>Biblos</title>
+</head>
+
+<body>
+  <!-- sidebar -->
+  <nav class="sidebar">
+    <a href="./index.html" class="logo">
+      <i class="bx bx-book-add"></i>
+      <div class="logo-name"><span>Biblos</span></div>
+    </a>
+    <ul class="side-menu">
+      <li>
+        <a href="./index.html"><i class="bx bxs-home-alt-2"></i>Home</a>
+      </li>
+      <li class="active">
+        <a href="./library.html"><i class="bx bx-library"></i>Library</a>
+      </li>
+      <li>
+        <a href="#"><i class="bx bx-search"></i>Search</a>
+      </li>
+      <li>
+        <a href="./books.html"><i class="bx bx-bible"></i>Bible</a>
+      </li>
+      <li>
+        <a href="./notes.html"><i class="bx bx-note"></i>Notes</a>
+      </li>
+      <li>
+        <a href="./shopping.html"><i class="bx bx-store-alt"></i>Shop</a>
+      </li>
+      <li>
+        <a href="./preferences.html"><i class="bx bx-cog"></i>Prefrences</a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#" class="logout">
+          <i class="bx bx-log-out"></i>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- end sidebar -->
+
+  <!-- header navbar -->
+  <header class="header-nav">
+    <nav>
+      <i class="bx bx-menu"></i>
+      <form action="#" class="search-form">
+        <div class="form-element-container">
+          <input type="search" placeholder="vers&iacute;culo o tema..." />
+          <button class="search-btn" type="submit">
+            <i class="bx bx-search"></i>
+          </button>
+        </div>
+      </form>
+      <input type="checkbox" id="theme-toggle" hidden />
+      <label for="theme-toggle" class="theme-toggle"></label>
+      <a href="#" class="notif">
+        <i class="bx bx-bell"></i>
+        <span class="count">12</span>
+      </a>
+      <a href="#" class="profile">
+        <img src="images/logo.png" />
+      </a>
+    </nav>
+  </header>
+  <!-- end header navbar -->
+
+  <!-- main content -->
+  <main class="home">
+
+  </main>
+  <!-- end main content -->
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
