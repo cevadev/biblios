@@ -90,7 +90,7 @@ body {
   width: 6rem;
 }
 
-.sidebar .logo .bx {
+.sidebar .bx {
   min-width: 6rem;
   display: flex;
   justify-content: center;
@@ -143,7 +143,7 @@ body {
   z-index: -1;
 }
 
-.side-menu li a {
+.side-menu a {
   width: 100%;
   height: 100%;
   background: var(--light);
@@ -157,7 +157,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.side-menu li a:hover {
+.side-menu a:hover {
   color: var(--primary);
 }
 
@@ -165,7 +165,7 @@ body {
   color: var(--primary);
 }
 
-.sidebar.close .side-menu li a {
+.sidebar.close .side-menu a {
   width: calc(4.8rem - (0.4rem * 2));
   transition: all 0.3s ease;
 }
@@ -180,15 +180,14 @@ body {
   left: 6rem;
 }
 
-.side-menu li a .bx {
+.side-menu .bx {
   min-width: calc(6rem - ((0.4rem + 0.6rem) * 2));
   display: flex;
   font-size: 1.5rem;
   justify-content: center;
 }
 
-/* Selector hijo directo (>)*/
-.side-menu > li a.logout {
+.side-menu a.logout {
   color: var(--danger);
 }
 
@@ -223,11 +222,11 @@ body {
   box-shadow: -2rem -2rem 0 var(--light);
 }
 
-.header-nav nav a {
+.header-nav a {
   color: var(--dark);
 }
 
-.header-nav nav .bx.bx-menu {
+.header-nav .bx-menu {
   cursor: pointer;
   color: var(--dark);
 }
