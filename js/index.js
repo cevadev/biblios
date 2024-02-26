@@ -4,6 +4,8 @@ import sidebarToggle from "./dom/sidebar-toggle.js";
 import searchButtonIcon from "./dom/search-button-icon.js";
 import windowResize from "./dom/window-resize.js";
 
+import workingWithSeed from "./dom/working-with-seed.js";
+
 const doc = document;
 
 doc.addEventListener("DOMContentLoaded", (e) => {
@@ -12,4 +14,8 @@ doc.addEventListener("DOMContentLoaded", (e) => {
   sidebarToggle();
   searchButtonIcon();
   windowResize();
+
+  /** testing curso javascript john mircha */
+  workingWithSeed();
+  /** fin testing */
 });
