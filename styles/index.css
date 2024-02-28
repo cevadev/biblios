@@ -227,6 +227,7 @@ body {
 }
 
 .header-nav .bx-menu {
+  visibility: hidden;
   cursor: pointer;
   color: var(--dark);
 }
@@ -245,7 +246,7 @@ body {
 
 .form-element-container input {
   flex-grow: 1;
-  padding: 0 1.6rem;
+  padding: 0 2rem;
   height: 100%;
   border: none;
   background: var(--grey);
@@ -340,7 +341,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   width: calc(100% - 23rem);
-  padding: 1.5rem 0.3rem;
+  padding: 1.5rem 1.5rem;
   left: 23rem;
   transition: all 0.3s ease;
 }
