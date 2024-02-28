@@ -54,7 +54,7 @@ body.dark {
 
 body {
   background: var(--grey);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .sidebar {
@@ -340,7 +340,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   width: calc(100% - 23rem);
-  padding: 1.5rem 2.4rem;
+  padding: 1.5rem 0.3rem;
   left: 23rem;
   transition: all 0.3s ease;
 }
