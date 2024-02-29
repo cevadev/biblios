@@ -15,18 +15,33 @@
   --light-success: #bbf7d0;
 }
 
-/* selector universal */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "roboto", sans-serif;
-}
+/* ******************** Reset CSS ******************** */
 
 html {
+  box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-size: 62.5%;
+  text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--grey);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  /* overflow-x: hidden; */
 }
 
 .bx {
@@ -35,6 +50,7 @@ html {
 
 a {
   text-decoration: none;
+  transition: all 0.3s ease-out;
 }
 
 li {
@@ -50,11 +66,6 @@ body.dark {
   --light: #181a1e;
   --grey: #25252c;
   --dark: #fbfbfb;
-}
-
-body {
-  background: var(--grey);
-  /* overflow-x: hidden; */
 }
 
 .sidebar {

@@ -15,15 +15,51 @@
 //}
 
 // version 2 - Funcion constructora donde asignamos los metodos al prototipo
-export default function Bible(id, name, abbreviation) {
+function Book(id, name, description) {
   this.id = id;
   this.name = name;
+  this.description = description;
+}
+Book.prototype.getName = function () {
+  // console.info(`Name: ${this.name}`);
+};
+Book.prototype.getDescription = function () {
+  // console.info(`Description: ${this.description}`);
+};
+
+export default function Bible(id, name, description, abbreviation) {
+  this.super = Book;
+  this.super(id, name, description);
   this.abbreviation = abbreviation;
 }
+// bible hereda de Book
+Bible.prototype = new Book();
+Bible.prototype.constructor = Bible;
 
-Bible.prototype.getBible = function () {
-  console.info(this);
-};
+// sobrescritura de los metodos del padre en el hijo
 Bible.prototype.getName = function () {
   console.info(`Bible name: ${this.name}`);
 };
+
+Bible.prototype.getDescription = function () {
+  console.info(`Bible description: ${this.description}`);
+};
+
+Bible.prototype.getAbb = function () {
+  console.info(`Bible Abb.: ${this.abbreviation}`);
+};
+
+// Version 3 - Clase
+// export default class Bible {
+//   constructor(id, name, abbreviation) {
+//     this.id = id;
+//     this.name = name;
+//     this.abbreviation = abbreviation;
+//   }
+//   getBible() {
+//     console.info(this);
+//   }
+//   getName() {
+//     console.info(`Bible name: ${this.name}`);
+//   }
+// }
