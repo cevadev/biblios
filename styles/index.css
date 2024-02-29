@@ -1,18 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"); */
+
+/* ******************** Fonts ******************** */
+@font-face {
+  font-family: "Raleway light-color";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/raleway-100.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/raleway-400.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Raleway Black";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/raleway-900.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/graphik-400.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Graphik Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/graphik-500.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Graphik Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/graphik-600.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/roboto-mono-400.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
 
 :root {
-  --light: #f6f6f9;
-  --primary: #1976d2;
-  --light-primary: #cfe8ff;
+  --font-text-400: "Graphik", sans-serif;
+  --font-text-500: "Graphik Medium", sans-serif;
+  --font-text-600: "Graphik Semibold", sans-serif;
+  --font-code: "Roboto Mono", Consolas;
+  --font-logo: "Raleway", sans-serif;
+  --font-logo-black: "Raleway Black", sans-serif;
+
+  --light-color: #f9fafb;
+  --primary-color: #1976d2;
   --grey: #eee;
-  --dark-grey: #aaaaaa;
   --dark: #363949;
-  --danger: #d32f2f;
-  --light-danger: #fecdd3;
-  --warning: #fbc02d;
-  --light-warning: #fff2c6;
-  --success: #388e3c;
-  --light-success: #bbf7d0;
+
+  --danger-color: #d32f2f;
+  --warning-color: #fbc02d;
+  --success-color: #388e3c;
 }
 
 /* ******************** Reset CSS ******************** */
@@ -63,7 +135,7 @@ body::selection {
 }
 
 body.dark {
-  --light: #181a1e;
+  --light-color: #181a1e;
   --grey: #25252c;
   --dark: #fbfbfb;
 }
@@ -72,7 +144,7 @@ body.dark {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--light);
+  background: var(--light-color);
   width: 23rem;
   height: 100%;
   z-index: 2000;
@@ -91,7 +163,7 @@ body.dark {
   height: 5.6rem;
   display: flex;
   align-items: center;
-  color: var(--primary);
+  color: var(--dark);
   z-index: 500;
   padding-bottom: 2rem;
   box-sizing: content-box;
@@ -109,6 +181,7 @@ body.dark {
 }
 
 .sidebar span {
+  font-family: var(--font-logo);
   color: var(--dark);
 }
 
@@ -157,7 +230,7 @@ body.dark {
 .side-menu a {
   width: 100%;
   height: 100%;
-  background: var(--light);
+  background: var(--light-color);
   display: flex;
   align-items: center;
   border-radius: 4.8rem;
@@ -169,11 +242,11 @@ body.dark {
 }
 
 .side-menu a:hover {
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 .side-menu li.active a {
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 .sidebar.close .side-menu a {
@@ -211,7 +284,7 @@ body.dark {
 
 .header-nav nav {
   height: 5.6rem;
-  background: var(--light);
+  background: var(--light-color);
   padding: 0 2.4rem 0 0;
   display: flex;
   align-items: center;
@@ -230,7 +303,7 @@ body.dark {
   bottom: -4rem;
   left: 0;
   border-radius: 50%;
-  box-shadow: -2rem -2rem 0 var(--light);
+  box-shadow: -2rem -2rem 0 var(--light-color);
 }
 
 .header-nav a {
@@ -268,11 +341,11 @@ body.dark {
 }
 
 .form-element-container input:hover {
-  border: 0.2rem solid var(--primary);
+  border: 0.2rem solid var(--primary-color);
 }
 
 .form-element-container input:focus {
-  background: var(--light);
+  background: var(--light-color);
 }
 .form-element-container button {
   width: 8rem;
@@ -280,8 +353,8 @@ body.dark {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--primary);
-  color: var(--light);
+  background: var(--primary-color);
+  color: var(--light-color);
   font-size: 1.8rem;
   border: none;
   outline: none;
@@ -302,8 +375,8 @@ body.dark {
   height: 2rem;
   background: var(--danger);
   border-radius: 50%;
-  color: var(--light);
-  border: 0.2rem solid var(--light);
+  color: var(--light-color);
+  border: 0.2rem solid var(--light-color);
   font-weight: 700;
   font-size: 1.2rem;
   display: flex;
@@ -328,7 +401,7 @@ body.dark {
   left: 0.2rem;
   bottom: 0.2rem;
   width: calc(2.5rem - 0.4rem);
-  background: var(--primary);
+  background: var(--primary-color);
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -376,7 +449,7 @@ body.dark {
 }
 
 .startPanelContainer {
-  background: var(--light);
+  background: var(--light-color);
 }
 
 .startPanelContainer > p {
@@ -406,7 +479,7 @@ body.dark {
 }
 
 .services button:hover {
-  color: var(--primary);
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 76.8rem) {
@@ -442,7 +515,7 @@ body.dark {
   .search-form.show .form-element-container button {
     width: 3.6rem;
     height: 100%;
-    color: var(--light);
+    color: var(--light-color);
     background: var(--danger);
     border-radius: 0 3.6rem 3.6rem 0;
   }
