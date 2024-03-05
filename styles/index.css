@@ -77,14 +77,27 @@
   --font-logo: "Raleway", sans-serif;
   --font-logo-black: "Raleway Black", sans-serif;
 
+  --dark-color: #1f2937;
+  --text-dark-color: #e7e9ea;
+  --link-dark-color: #73cffa;
+  --border-dark-color: #586474;
+
   --light-color: #f9fafb;
+  --text-light-color: #16191d;
+  --link-light-color: #08c;
+  --border-light-color: #f2f2f2;
+
   --primary-color: #1976d2;
-  --grey: #eee;
-  --dark: #363949;
+  --secondary-color: #d27519;
+  --tertiary-color: #efb57b;
 
   --danger-color: #d32f2f;
   --warning-color: #fbc02d;
   --success-color: #388e3c;
+
+  --container-sm: 768px;
+  --container-md: 992px;
+  --container-lg: 1200px;
 }
 
 /* ******************** Reset CSS ******************** */
@@ -95,6 +108,7 @@ html {
   overflow-x: hidden;
   font-size: 62.5%;
   text-size-adjust: 100%;
+  color: var(--dark-color);
 }
 
 * {
@@ -110,7 +124,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--grey);
+  background: var(--border-light-color);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   /* overflow-x: hidden; */
@@ -131,13 +145,13 @@ li {
 
 body::selection {
   color: greenyellow;
-  background-color: var(--dark);
+  background-color: var(--dark-color);
 }
 
 body.dark {
   --light-color: #181a1e;
-  --grey: #25252c;
-  --dark: #fbfbfb;
+  --border-light-color: #25252c;
+  --dark-color: #fbfbfb;
 }
 
 .sidebar {
@@ -163,7 +177,7 @@ body.dark {
   height: 5.6rem;
   display: flex;
   align-items: center;
-  color: var(--dark);
+  color: var(--dark-color);
   z-index: 500;
   padding-bottom: 2rem;
   box-sizing: content-box;
@@ -181,8 +195,8 @@ body.dark {
 }
 
 .sidebar span {
-  font-family: var(--font-logo);
-  color: var(--dark);
+  font-family: var(--font-logo-black);
+  color: var(--dark-color);
 }
 
 .side-menu {
@@ -199,7 +213,7 @@ body.dark {
 }
 
 .side-menu li.active {
-  background: var(--grey);
+  background: var(--border-light-color);
   position: relative;
 }
 
@@ -211,7 +225,7 @@ body.dark {
   border-radius: 50%;
   top: -4rem;
   right: 0;
-  box-shadow: 2rem 2rem 0 var(--grey);
+  box-shadow: 2rem 2rem 0 var(--border-light-color);
   z-index: -1;
 }
 
@@ -223,7 +237,7 @@ body.dark {
   border-radius: 50%;
   bottom: -4rem;
   right: 0;
-  box-shadow: 2rem -2rem 0 var(--grey);
+  box-shadow: 2rem -2rem 0 var(--border-light-color);
   z-index: -1;
 }
 
@@ -235,7 +249,7 @@ body.dark {
   align-items: center;
   border-radius: 4.8rem;
   font-size: 1.6rem;
-  color: var(--dark);
+  color: var(--dark-color);
   white-space: nowrap;
   overflow-x: hidden;
   transition: all 0.3s ease;
@@ -307,13 +321,13 @@ body.dark {
 }
 
 .header-nav a {
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 .header-nav .bx-menu {
   visibility: hidden;
   cursor: pointer;
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 .search-form {
@@ -333,11 +347,11 @@ body.dark {
   padding: 0 2rem;
   height: 100%;
   border: none;
-  background: var(--grey);
+  background: var(--border-light-color);
   border-radius: 3.6rem 0 0 3.6rem;
   outline: none;
   width: 100%;
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 .form-element-container input:hover {
@@ -388,7 +402,7 @@ body.dark {
   display: block;
   min-width: 5rem;
   height: 2.5rem;
-  background: var(--grey);
+  background: var(--border-light-color);
   cursor: pointer;
   position: relative;
   border-radius: 2.5rem;
@@ -432,7 +446,7 @@ body.dark {
 
 .home > section {
   margin-bottom: 1rem;
-  color: var(--dark);
+  color: var(--dark-color);
 }
 
 .start,
@@ -503,7 +517,7 @@ body.dark {
     width: auto;
     height: auto;
     background: transparent;
-    color: var(--dark);
+    color: var(--dark-color);
     border-radius: none;
   }
 

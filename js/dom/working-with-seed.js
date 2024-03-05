@@ -1,18 +1,18 @@
-import seed from "./seed.js";
 import Bible from "./bible.js";
+import Biblia from "./biblia.js";
 
-export default function workingWithSeed() {
-  const data = seed();
-  console.info(data);
+async function getData() {
+  let response = await fetch("js/dom/data.json");
+  let json = await response.json();
+  return json;
+}
 
-  const rvr09 = new Bible(
-    "592420522e16049f-01",
-    "Reina Valera 1909",
-    "Biblia Reina Valera 1909",
-    "RVR09"
-  );
-  rvr09.getName();
-  rvr09.getDescription();
-  rvr09.getAbb();
-  console.info(rvr09);
+export default async function getBiblesData() {
+  let data = await getData();
+  let bibles = data.bibles;
+  bibles.forEach((el) => {
+    let bible = new Biblia(el.id, el.name, el.description, el.abbreviation);
+    bible.setType = el.type;
+    console.info(bible.toString);
+  });
 }

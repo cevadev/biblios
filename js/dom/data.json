@@ -1,0 +1,110 @@
+{
+  "bibles": [
+    {
+      "id": "592420522e16049f-01",
+      "dblId": "592420522e16049f",
+      "relatedDbl": null,
+      "name": "Reina Valera 1909",
+      "nameLocal": "Reina Valera 1909",
+      "abbreviation": "RVR09",
+      "abbreviationLocal": "RVR09",
+      "description": "Biblia Reina Valera 1909",
+      "descriptionLocal": "Biblia Reina Valera 1909",
+      "language": {
+        "id": "spa",
+        "name": "Spanish",
+        "nameLocal": "Español",
+        "script": "Latin",
+        "scriptDirection": "LTR"
+      },
+      "countries": [
+        {
+          "id": "ZZ",
+          "name": "Unspecific",
+          "nameLocal": "Unspecific"
+        }
+      ],
+      "type": "text",
+      "updatedAt": "2023-12-21T09:18:14.000Z",
+      "audioBibles": []
+    },
+    {
+      "id": "482ddd53705278cc-02",
+      "dblId": "482ddd53705278cc",
+      "relatedDbl": null,
+      "name": "Versión Biblia Libre",
+      "nameLocal": "Versión Biblia Libre",
+      "abbreviation": "VBL",
+      "abbreviationLocal": "VBL",
+      "description": "Protestant",
+      "descriptionLocal": "Protestant",
+      "language": {
+        "id": "spa",
+        "name": "Spanish",
+        "nameLocal": "Español",
+        "script": "Latin",
+        "scriptDirection": "LTR"
+      },
+      "countries": [
+        {
+          "id": "ES",
+          "name": "Spain",
+          "nameLocal": "Spain"
+        },
+        {
+          "id": "MX",
+          "name": "Mexico",
+          "nameLocal": "Mexico"
+        },
+        {
+          "id": "PY",
+          "name": "Paraguay",
+          "nameLocal": "Paraguay"
+        },
+        {
+          "id": "CO",
+          "name": "Colombia",
+          "nameLocal": "Colombia"
+        },
+        {
+          "id": "CL",
+          "name": "Chile",
+          "nameLocal": "Chile"
+        },
+        {
+          "id": "EC",
+          "name": "Ecuador",
+          "nameLocal": "Ecuador"
+        },
+        {
+          "id": "HN",
+          "name": "Honduras",
+          "nameLocal": "Honduras"
+        },
+        {
+          "id": "NI",
+          "name": "Nicaragua",
+          "nameLocal": "Nicaragua"
+        },
+        {
+          "id": "PE",
+          "name": "Peru",
+          "nameLocal": "Peru"
+        },
+        {
+          "id": "PA",
+          "name": "Panama",
+          "nameLocal": "Panama"
+        },
+        {
+          "id": "CU",
+          "name": "Cuba",
+          "nameLocal": "Cuba"
+        }
+      ],
+      "type": "text",
+      "updatedAt": "2022-07-08T15:52:26.000Z",
+      "audioBibles": []
+    }
+  ]
+}
